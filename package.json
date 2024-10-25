@@ -1,0 +1,36 @@
+{
+  "name": "Dreamcatcher Digital",
+  "version": "1.0.0",
+  "description": "A portfolio showcasing my work",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p  hugo-server-watch",
+    "dev": "run-p  hugo-server bookshop",
+    "hugo-server-watch": "hugo server -D --watch",
+    "hugo-server": "hugo server -D -p 1233",
+    "build": "hugo --source ./ --destination public --baseURL /",
+    "bookshop": "npx @bookshop/browser",
+    "bookshop-update": "npx @bookshop/up@latest",
+    "fix-hugo": "hugo mod clean",
+    "new": "npx @bookshop/init --component"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlyshaNolan/dreamcatcher-digital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlyshaNolan/dreamcatcher-digital/issues"
+  },
+  "homepage": "https://github.com/AlyshaNolan/dreamcatcher-digital#readme",
+  "dependencies": {
+    "@bookshop/browser": "3.1.2",
+    "@bookshop/generate": "3.1.2",
+    "@bookshop/hugo-engine": "3.1.2",
+    "alpinejs": "^3.9.5",
+    "esbuild": "^0.14.29",
+    "npm-run-all": "^4.1.5"
+  }
+}

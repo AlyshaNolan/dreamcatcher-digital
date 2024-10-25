@@ -1,0 +1,18 @@
+<div class="c-modal">
+    <div class="c-modal__modal" @click.outside="showModal = false">
+        {{ range ( where site.RegularPages "Section" "projects" ) }}
+            <div class="c-modal__modal__content" x-data="{contentFor: '{{ .Path }}'}" x-show="page == contentFor">
+                <div class="c-modal__modal__content__hero">
+                    <h1>{{ .Title }}</h1>
+                    {{ range .Params.technologies }}
+                        {{ partial "bookshop" (slice "generic/technology-badge" .) }}
+                    {{ end }}
+                    <img src="{{ .Params.image }}" alt="Capture of the project">
+                </div>
+                <div class="c-modal__modal__content__text">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>

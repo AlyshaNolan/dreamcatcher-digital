@@ -1,0 +1,90 @@
+.c-card-carousel {
+    display: grid;
+    grid-template-columns: minmax(24px, 1fr) minmax(auto, 1280px) minmax(24px, 1fr);
+    background-color: #191919;
+    padding: 96px 0px;
+    row-gap: 24px;
+    width: 100%;
+    position: relative;
+
+    &__heading {
+        grid-column: 2;
+        justify-self: center;
+        margin: 1rem 0;
+        font-size: 5rem;
+        letter-spacing: 2px;
+        color: #fff;
+        --light-shine: #F005C9;
+        --dark-shine: #A6038B;
+        animation: shine 2s forwards, flicker 3s infinite;
+    }
+
+    &__container {
+        grid-column: 2;
+        width: 90%;
+        justify-self: center;
+        overflow: hidden;
+
+        &__cards {
+            color: #afafaf;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    }
+
+    &__navigation {
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 60%;
+       width: calc(100vw - 48px);
+       margin: 0 auto;
+       max-width: 1344px;
+       display: flex;
+       justify-content: space-between;
+
+       &__arrow {
+            width: 24px;
+            height: 24px;
+            background-color: #FFFFFF;
+            color: #A6038B;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0 0 20px 5px #A6038B;
+       }
+    }
+
+    &__pagination-dots {
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            width: 10px;
+            height: 10px;
+            background-color: #afafaf30;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .active-dot {
+            background-color: #A6038B;
+            cursor: default;
+            width: 12px;
+            height: 12px;
+        }
+    }
+    
+    &__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000000CC;
+    }
+    
+}

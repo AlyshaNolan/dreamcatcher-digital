@@ -1,0 +1,35 @@
+.c-card {
+    flex: 0 0 calc(33.333% - 48px);
+    padding: 16px;
+    border: 1px solid #afafaf30;
+    position: relative;
+    transition: .5s;
+
+    &:after, &:before {
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        z-index: 3;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        -webkit-transform: scale(0);
+        transition: 0.75s;
+        margin: -1px;
+    }
+    &:before {
+        border-top: 2px solid #A6038B;
+        border-left: 2px solid #A6038B;
+        -webkit-transform-origin: top left;
+    }
+    &:after {
+        border-bottom: 2px solid #A6038B;
+        border-right: 2px solid #A6038B;
+        -webkit-transform-origin: bottom right;
+    }
+
+    &:hover:after, &:hover:before {
+        -webkit-transform: scale(1);
+    }
+}

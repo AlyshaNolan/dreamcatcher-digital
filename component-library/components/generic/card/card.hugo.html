@@ -1,0 +1,7 @@
+<div class="c-card" @click="showModal = true; page = '{{ .Path }}'">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.short_text }}</p>
+    {{ range .Params.technologies }}
+        {{ partial "bookshop" (slice "generic/technology-badge" .) }}
+    {{ end }}
+</div>

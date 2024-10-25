@@ -1,0 +1,79 @@
+.c-hero {
+    display: grid;
+    grid-template-columns: minmax(24px, 1fr) minmax(auto, 1280px) minmax(24px, 1fr);
+    background-color: #121212;
+    padding: 96px 0px;
+
+    &__grid {
+        grid-column: 2;
+        color: #afafaf;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+
+        &__content {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+
+            &__heading {
+                margin: 1rem 0;
+                font-size: 5rem;
+                letter-spacing: 2px;
+                color: #fff;
+                --light-shine: #99F5F5;
+                --dark-shine: #65d4f0;
+                animation: shine 2s forwards, flicker 3s infinite;
+            }
+
+            &__subtitle {
+                margin: 0.5rem 0;
+                color: #65d4f0;
+                font-size: 3rem;
+            }
+
+            &__links {
+                display: flex;
+                gap: 48px;
+
+                &__link {
+                    font-size: 1.125rem;
+                    align-self: flex-end;
+                    color: #afafaf;
+                    text-decoration: none;
+                    border-bottom: 1px solid #afafaf;
+                    position: relative;
+                    transition: color 1s;
+
+                    &:after {
+                        width: 100%;
+                        z-index: 3;
+                        content: "";
+                        position: absolute;
+                        bottom: -1.5px;
+                        left: 0;
+                        box-sizing: border-box;
+                        -webkit-transform: scale(0);
+                        transition: 0.75s;
+                    }
+                    &:after {
+                        border-bottom: 2px solid #65d4f0;
+                        -webkit-transform-origin: bottom left;
+                    }
+            
+                    &:hover {
+                        color: #65d4f0;
+                    }
+                    &:hover:after {
+                        -webkit-transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        &__image {
+            box-shadow: 0 0 5px #65d4f0, 0 0 15px #fff;
+            border-radius: 10px;
+            height: 400px;
+        }
+    }
+}

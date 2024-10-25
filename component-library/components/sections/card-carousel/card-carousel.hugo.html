@@ -1,0 +1,26 @@
+<section class="c-card-carousel" x-data="carousel()" x-init="maxGroup = Math.floor(({{ len .cards }} - 1) / 3)">
+    <h2 class="c-card-carousel__heading">Portfolio</h2>
+    
+    <div class="c-card-carousel__container">
+        <div class="c-card-carousel__container__cards" :style="`transform: translateX(-${currentGroup * 100}%);`">
+            {{ range ( where site.RegularPages "Section" "projects" ) }}
+                {{ partial "bookshop" (slice "generic/card" .) }}
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="c-card-carousel__navigation">
+        <button class="c-card-carousel__navigation__arrow c-card-carousel__navigation__arrow--prev-arrow" @click="prevGroup()"><</button>
+        <button class="c-card-carousel__navigation__arrow c-card-carousel__navigation__arrow--next-arrow" @click="nextGroup()">></button>
+    </div>
+
+    <div class="c-card-carousel__pagination-dots">
+        <template x-for="(dot, index) in Array.from({ length: maxGroup + 1 })" :key="index">
+            <span :class="{'active-dot': currentGroup === index}" @click="currentGroup = index"></span>
+        </template>
+    </div>
+
+    <div class="c-card-carousel__modal" x-show="showModal">
+        {{ partial "bookshop" (slice "generic/modal" .) }}
+    </div>
+</section>
