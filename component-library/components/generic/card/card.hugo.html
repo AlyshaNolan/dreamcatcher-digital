@@ -1,7 +1,10 @@
 <div class="c-card" @click="showModal = true; page = '{{ .Path }}'">
+    <img src="{{ .Params.thumbnail_image }}">
     <h1>{{ .Title }}</h1>
     <p>{{ .Params.short_text }}</p>
-    {{ range .Params.technologies }}
-        {{ partial "bookshop" (slice "generic/technology-badge" .) }}
-    {{ end }}
+    <div class="c-card__technologies">
+        {{ range .Params.technologies }}
+            {{ partial "bookshop" (slice "generic/technology-badge" (dict "text" .text "link" .link "linkable" false)) }}
+        {{ end }}
+    </div>
 </div>

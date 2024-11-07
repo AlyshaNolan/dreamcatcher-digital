@@ -1,3 +1,9 @@
-<a href="{{ .link }}" class="c-technology-badge">
-    {{ .text }}
-</a>
+{{ if and .linkable .link }}
+    <a href="{{ .link }}" class="c-technology-badge c-technology-badge--linkable">
+        {{ .text }}
+    </a>
+{{ else }}
+    <span class="c-technology-badge">
+        {{ .text }}
+    </span>
+{{ end }}

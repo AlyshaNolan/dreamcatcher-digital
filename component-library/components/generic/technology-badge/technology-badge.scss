@@ -3,4 +3,30 @@
     color: #afafaf;
     padding: 8px;
     text-decoration: none;
+    display: inline-block;
+
+    &--linkable {
+        position: relative;
+        transition: all .35s;
+        
+        &:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #A6038B;
+            transition: all .35s;
+            z-index: -1;
+        }
+
+        &:hover{
+            color: #1b1b1b;
+        }
+          
+        &:hover:after{
+            width: 100%;
+        }
+    }
 }

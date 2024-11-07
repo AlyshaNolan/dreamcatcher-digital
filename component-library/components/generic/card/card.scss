@@ -4,6 +4,14 @@
     border: 1px solid #afafaf30;
     position: relative;
     transition: .5s;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: auto 6rem 100px 40px;
+
+    &__technologies {
+        display: flex;
+        gap: 16px;
+    }
 
     &:after, &:before {
         width: calc(100% + 2px);
