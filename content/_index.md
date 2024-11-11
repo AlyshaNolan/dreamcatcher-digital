@@ -103,4 +103,17 @@ content_blocks:
             text: AI Integrations
             link:
             linkable: false
+  - _bookshop_name: sections/two-col
+    heading: About Me
+    column_one: >-
+      I'm a Dunedin-based web developer with nearly three years of experience in
+      crafting high-performance, SEO-optimized websites. I hold a Bachelor of
+      Science from Otago University, where I majored in Computer Science and
+      minored in Information Science. My focus is on delivering clean,
+      accessible code and building editor-friendly sites that prioritize
+      seamless user experiences. With a strong background in frontend
+      development, I bring designs to life with responsive, functional solutions
+      while continuously improving workflows to create efficient, reliable
+      projects.
+    column_two: '{{< figure >}}'
 ---
