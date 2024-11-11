@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: "Skills-showcase"
-  description:
-  icon:
+  label: "Skills Showcase"
+  description: Showcase badges
+  icon: view_carousel
   tags: []
 
 # Defines the structure of this component, as well as the default values

@@ -2,7 +2,7 @@
 spec:
   structures:
     - content_blocks
-  label: "Technology-badge"
+  label: "Technology Badge"
   description:
   icon:
   tags: []
@@ -11,9 +11,12 @@ spec:
 blueprint:
   text:
   link:
+  linkable:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  linkable:
+    type: checkbox

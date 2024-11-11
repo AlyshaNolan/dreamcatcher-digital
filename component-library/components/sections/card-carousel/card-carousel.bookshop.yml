@@ -2,14 +2,14 @@
 spec:
   structures:
     - content_blocks
-  label: "Card-carousel"
-  description:
-  icon:
+  label: "Card Carousel"
+  description: Cards to display projects in a carousel
+  icon: recent_actors
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  heading:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
