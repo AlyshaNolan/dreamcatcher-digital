@@ -39,6 +39,10 @@
                 box-shadow: 0 0 5px #65d4f0, 0 0 15px #fff;
                 border: none;
 
+                &:focus {
+                    outline: 3px solid #65d4f0;
+                }
+
                 &--textarea {
                     resize: vertical;
                     height: 100px;
