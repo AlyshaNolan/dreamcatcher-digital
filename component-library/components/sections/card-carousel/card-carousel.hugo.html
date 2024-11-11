@@ -20,7 +20,7 @@
         </template>
     </div>
 
-    <div class="c-card-carousel__modal" x-show="showModal">
+    <div class="c-card-carousel__modal" x-show="showModal" x-cloak>
         {{ partial "bookshop" (slice "generic/modal" .) }}
     </div>
 </section>

@@ -1,0 +1,13 @@
+<div class="c-skills-showcase">
+    <h2 class="c-skills-showcase__heading" id="{{ .heading | lower }}">{{ .heading }}</h2>
+    <div class="c-skills-showcase__skills" x-data="{ shown: false }">
+        {{ range .skills }}
+            <h3 class="c-skills-showcase__skills__group-name">{{ .group_name }}</h3>
+            <div class="c-skills-showcase__skills__badges" x-intersect="shown = true" :class="shown ? 'c-skills-showcase__skills__badges--animate' : ''">
+                {{ range .skills }}
+                    {{ partial "bookshop" (slice "generic/technology-badge" .) }}
+                {{ end }}
+            </div>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,54 @@
+.c-skills-showcase {
+    background-color: #121212;
+    display: grid;
+    grid-template-columns: minmax(24px, 1fr) minmax(auto, 1280px) minmax(24px, 1fr);
+    color: #afafaf;
+    gap: 24px;
+    padding: 96px 0px;
+    justify-items: center;
+
+    &__heading {
+        grid-column: 2;
+        margin: 1rem 0;
+        letter-spacing: 2px;
+        color: #fff;
+        --light-shine: #99F5F5;
+        --dark-shine: #65d4f0;
+        animation: shine 2s forwards, flicker 3s infinite;
+    }
+
+    &__skills {
+        --badge-color: #65d4f0;
+        grid-column: 2;
+
+        &__group-name {
+            font-size: 1.5rem;
+            color: #65d4f0;
+        }
+
+        &__badges {
+            display: flex;
+            column-gap: 12px;
+            row-gap: 16px;
+            flex-wrap: wrap;
+
+            .c-technology-badge {
+                opacity: 0;
+                transform: scale(0);
+                transition: transform 1s cubic-bezier(.25, .46, .45, .94);
+            }
+
+            &--animate {
+                .c-technology-badge {
+                    @for $i from 1 through 20 {
+                        &:nth-child(#{$i}) {
+                            transition-delay: 170ms * $i;
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

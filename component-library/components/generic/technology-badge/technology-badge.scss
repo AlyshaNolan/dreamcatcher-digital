@@ -4,6 +4,7 @@
     padding: 8px;
     text-decoration: none;
     display: inline-block;
+    z-index: 0;
 
     &--linkable {
         position: relative;
@@ -16,7 +17,7 @@
             left: 0;
             width: 0;
             height: 100%;
-            background: #A6038B;
+            background: var(--badge-color);
             transition: all .35s;
             z-index: -1;
         }

@@ -27,6 +27,7 @@
   "homepage": "https://github.com/AlyshaNolan/dreamcatcher-digital#readme",
   "dependencies": {
     "@alpinejs/focus": "^3.14.3",
+    "@alpinejs/intersect": "^3.14.3",
     "@bookshop/browser": "3.1.2",
     "@bookshop/generate": "3.1.2",
     "@bookshop/hugo-engine": "3.1.2",
