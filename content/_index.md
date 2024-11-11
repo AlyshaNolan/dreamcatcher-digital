@@ -105,7 +105,7 @@ content_blocks:
             linkable: false
   - _bookshop_name: sections/two-col
     heading: About Me
-    column_one: >-
+    content: >-
       I'm a Dunedin-based web developer with nearly three years of experience in
       crafting high-performance, SEO-optimized websites. I hold a Bachelor of
       Science from Otago University, where I majored in Computer Science and
@@ -115,5 +115,8 @@ content_blocks:
       development, I bring designs to life with responsive, functional solutions
       while continuously improving workflows to create efficient, reliable
       projects.
-    column_two: '{{< figure >}}'
+    map:
+      latitude: -45.874
+      longitude: 170.504
+      zoom_level: 10
 ---

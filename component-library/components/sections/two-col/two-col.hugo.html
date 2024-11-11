@@ -1,7 +1,7 @@
 <div class="c-two-col">
-    <h2>{{ .heading }}</h2>
-    <div>
-        <div>{{ .column_one | markdownify }}</div>
-        <div>{{ .column_two | markdownify }}</div>
+    <h2 class="c-two-col__heading">{{ .heading }}</h2>
+    <div class="c-two-col__columns">
+        <div class="c-two-col__columns__text">{{ .content | markdownify }}</div>
+        <div>{{ partial "bookshop" (slice "simple/map" .map) }}</div>
     </div>
 </div>

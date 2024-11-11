@@ -16,9 +16,6 @@ export default () => {
             } else {
                 this.maxGroup = (this.cards - 1);
             }
-            console.log(this.screenSize)
-            console.log(this.cards)
-            console.log(this.maxGroup)
         },
 
         init() {
