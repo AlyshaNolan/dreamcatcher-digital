@@ -14,59 +14,59 @@ content_blocks:
         skills:
           - _bookshop_name: generic/technology-badge
             text: HTML
-            link:
+            link: https://developer.mozilla.org/en-US/docs/Web/HTML
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Astro
-            link:
+            link: https://astro.build/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Hugo
-            link:
+            link: https://gohugo.io/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Eleventy
-            link:
+            link: https://www.11ty.dev/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Next.js
-            link:
-            linkable: true
-          - _bookshop_name: generic/technology-badge
-            text: Javascript
-            link:
+            link: https://nextjs.org/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Jekyll
-            link:
+            link: https://jekyllrb.com/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Component Development (Bookshop)
-            link:
+            link: https://cloudcannon.com/blog/introducing-bookshop/
+            linkable: true
+          - _bookshop_name: generic/technology-badge
+            text: Javascript
+            link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: AlpineJS
-            link:
+            link: https://alpinejs.dev/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Typescript
-            link:
+            link: https://www.typescriptlang.org/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: CSS
-            link:
+            link: https://developer.mozilla.org/en-US/docs/Web/CSS
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: SASS
-            link:
+            link: https://sass-lang.com/
             linkable: true
           - _bookshop_name: generic/technology-badge
-            text: Tailwind
-            link:
+            text: Tailwind CSS
+            link: https://tailwindcss.com/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Figma
-            link:
+            link: https://www.figma.com/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Responsive / Mobile First development
@@ -80,25 +80,27 @@ content_blocks:
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: CloudCannon
-            link:
+            link: https://cloudcannon.com/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Search Engine Optimization
-            link:
+            link: >-
+              https://developers.google.com/search/docs/fundamentals/seo-starter-guide#:~:text=SEO%E2%80%94short%20for%20search%20engine,site%20through%20a%20search%20engine.
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Web Performance Optimization
-            link:
+            link: https://developer.mozilla.org/en-US/docs/Web/Performance
             linkable: true
           - _bookshop_name: generic/technology-badge
-            text: PageFind
-            link:
+            text: Pagefind
+            link: https://pagefind.app/
             linkable: true
           - _bookshop_name: generic/technology-badge
             text: Algolia
-            link:
+            link: https://www.algolia.com/
+            linkable: true
           - _bookshop_name: generic/technology-badge
             text: AI Integrations
             link:
-            linkable: true
+            linkable: false
 ---
