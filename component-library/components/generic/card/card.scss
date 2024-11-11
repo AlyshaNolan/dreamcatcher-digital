@@ -1,5 +1,6 @@
 .c-card {
-    flex: 0 0 calc(33.333% - 48px);
+    flex: 0 0 calc(100% - 96px);
+    margin: 0px 32px;
     padding: 16px;
     border: 1px solid #afafaf30;
     position: relative;
@@ -39,5 +40,14 @@
 
     &:hover:after, &:hover:before {
         -webkit-transform: scale(1);
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: 0px 8px;
+        flex: 0 0 calc(50% - 48px);
+    }
+
+    @media screen and (min-width: 1024px) {
+        flex: 0 0 calc(33.34% - 48px);
     }
 }

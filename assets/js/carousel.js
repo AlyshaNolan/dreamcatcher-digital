@@ -4,6 +4,30 @@ export default () => {
         maxGroup: 0,  // Calculate number of groups
         showModal: false,
         page: '',
+        screenSize: '',
+        cards: 0,
+
+        calcMaxCards() {
+            this.screenSize = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+            if (this.screenSize >= 1024) {
+                this.maxGroup = Math.floor(((this.cards) - 1) / 3);
+            } else if (this.screenSize >= 768) {
+                this.maxGroup = Math.floor(((this.cards) - 1) / 2);
+            } else {
+                this.maxGroup = (this.cards - 1);
+            }
+            console.log(this.screenSize)
+            console.log(this.cards)
+            console.log(this.maxGroup)
+        },
+
+        init() {
+            this.calcMaxCards()
+        },
+
+        resize() {
+            this.calcMaxCards()
+        },
         
         nextGroup() {
             if (this.currentGroup < this.maxGroup) {
@@ -17,7 +41,7 @@ export default () => {
             if (this.currentGroup > 0) {
                 this.currentGroup--;
             } else {
-                this.currentGroup = this.maxGroup;  // Loop back to the last group
+                this.currentGroup = this.maxGroup;  // Loop to the last group
             }
         }
     }
