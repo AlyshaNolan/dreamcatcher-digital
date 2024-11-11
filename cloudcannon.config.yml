@@ -17,8 +17,17 @@ collections_config:
       - '!_index.md'
     name: Projects
     icon: add_business
-    disable_url: false
+    disable_url: true
     description: ''
+    preview:
+      text:
+      subtext:
+      icon:
+      icon_color:
+      image:
+        - key: thumbnail_image
+      metadata:
+      gallery:
     _enabled_editors:
     disable_add: false
     disable_add_folder: false
