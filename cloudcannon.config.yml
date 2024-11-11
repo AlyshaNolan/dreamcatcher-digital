@@ -9,6 +9,7 @@ collections_config:
       - '!components.md'
     name: Pages
     icon: wysiwyg
+    url: /[slug]
     disable_url: false
     description: ''
     _enabled_editors:
