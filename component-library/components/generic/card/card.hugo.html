@@ -1,6 +1,6 @@
 <div class="c-card" @click="showModal = true; page = '{{ .Path }}'">
     <img src="{{ .Params.thumbnail_image }}">
-    <h1>{{ .Title }}</h1>
+    <h3 class="c-card__heading">{{ .Title }}</h3>
     <p>{{ .Params.short_text }}</p>
     <div class="c-card__technologies">
         {{ range .Params.technologies }}

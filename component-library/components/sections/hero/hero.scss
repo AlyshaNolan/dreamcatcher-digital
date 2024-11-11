@@ -8,16 +8,17 @@
         grid-column: 2;
         color: #afafaf;
         display: grid;
-        grid-template-columns: 1fr auto;
         gap: 24px;
+        justify-items: center;
 
         &__content {
             display: grid;
             grid-template-rows: auto auto 1fr;
+            justify-items: center;
+            text-align: center;
 
             &__heading {
                 margin: 1rem 0;
-                font-size: 5rem;
                 letter-spacing: 2px;
                 color: #fff;
                 --light-shine: #99F5F5;
@@ -28,7 +29,13 @@
             &__subtitle {
                 margin: 0.5rem 0;
                 color: #65d4f0;
-                font-size: 3rem;
+                font-size: 2rem;
+                @media screen and (min-width: 768px) {
+                    font-size: 2.5rem;   
+                }
+                @media screen and (min-width: 480px) {
+                    font-size: 3rem;   
+                }
             }
 
             &__links {
@@ -73,7 +80,19 @@
         &__image {
             box-shadow: 0 0 5px #65d4f0, 0 0 15px #fff;
             border-radius: 10px;
-            height: 400px;
+            max-height: 400px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__grid {
+            grid-template-columns: 1fr auto;
+            justify-items: left;
+
+            &__content {
+                justify-items: left;
+                text-align: left;
+            }
         }
     }
 }

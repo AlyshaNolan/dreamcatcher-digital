@@ -11,16 +11,11 @@
         grid-column: 2;
         justify-self: center;
         margin: 1rem 0;
-        font-size: 3.5rem;
         letter-spacing: 2px;
         color: #fff;
         --light-shine: #F005C9;
         --dark-shine: #A6038B;
         animation: shine 2s forwards, flicker 3s infinite;
-
-        @media screen and (min-width: 480px) {
-            font-size: 5rem;   
-        }
     }
 
     &__container {
