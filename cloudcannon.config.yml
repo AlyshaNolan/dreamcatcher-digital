@@ -5,17 +5,17 @@ paths:
 collections_config:
   pages:
     path: content
+    glob:
+      - '!components.md'
     name: Pages
     icon: wysiwyg
     disable_url: false
+    description: ''
+    _enabled_editors:
+      - visual
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    url: [full_slug]
-    _enabled_editors:
-      - visual
-    glob:
-      - '!components.md'
   projects:
     path: content/projects
     glob:
