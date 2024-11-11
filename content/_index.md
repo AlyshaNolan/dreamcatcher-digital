@@ -119,4 +119,6 @@ content_blocks:
       latitude: -45.874
       longitude: 170.504
       zoom_level: 10
+  - _bookshop_name: sections/contact
+    heading: Contact
 ---
