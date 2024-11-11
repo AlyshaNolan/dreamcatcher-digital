@@ -31,6 +31,11 @@
             column-gap: 12px;
             row-gap: 16px;
             flex-wrap: wrap;
+            justify-content: center;
+
+            @media screen and (min-width: 768px) {
+                justify-content: left;
+            }
 
             .c-technology-badge {
                 opacity: 0;
