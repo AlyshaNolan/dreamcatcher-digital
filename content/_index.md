@@ -1,82 +1,104 @@
 ---
-title: "Home"
+title: Home
 content_blocks:
-  - _bookshop_name: "sections/hero"
-    heading: "Alysha Jo Nolan"
-    subtitle: "Web Developer"
-  - _bookshop_name: "sections/card-carousel"
+  - _bookshop_name: sections/hero
+    heading: Alysha Jo Nolan
+    subtitle: Web Developer
+  - _bookshop_name: sections/card-carousel
     heading: Portfolio
-  - _bookshop_name: "sections/skills-showcase"
+    text: Hello World!
+  - _bookshop_name: sections/skills-showcase
     heading: Skills
     skills:
       - group_name: Front-End Development and Styling
         skills:
-          - text: HTML
-            link: 
-            linkable: true
-          - text: Javascript
+          - _bookshop_name: generic/technology-badge
+            text: HTML
             link:
             linkable: true
-          - text: Algolia
+          - _bookshop_name: generic/technology-badge
+            text: Astro
             link:
             linkable: true
-          - text: Typescript
-            link: 
-            linkable: true
-          - text: CSS
+          - _bookshop_name: generic/technology-badge
+            text: Hugo
             link:
             linkable: true
-          - text: Tailwind
+          - _bookshop_name: generic/technology-badge
+            text: Eleventy
             link:
             linkable: true
-          - text: SASS
-            link: 
-            linkable: true
-          - text: Figma
+          - _bookshop_name: generic/technology-badge
+            text: Next.js
             link:
             linkable: true
-          - text: AlpineJS
+          - _bookshop_name: generic/technology-badge
+            text: Javascript
             link:
             linkable: true
-          - text: Astro
-            link: 
-            linkable: true
-          - text: Hugo
+          - _bookshop_name: generic/technology-badge
+            text: Jekyll
             link:
             linkable: true
-          - text: Eleventy
+          - _bookshop_name: generic/technology-badge
+            text: Component Development (Bookshop)
             link:
             linkable: true
-          - text: Jekyll
-            link: 
-            linkable: true
-          - text: Next.js
+          - _bookshop_name: generic/technology-badge
+            text: AlpineJS
             link:
             linkable: true
-          - text: Component Development (Bookshop)
+          - _bookshop_name: generic/technology-badge
+            text: Typescript
             link:
             linkable: true
-          - text: Responsive / Mobile First development
+          - _bookshop_name: generic/technology-badge
+            text: CSS
+            link:
+            linkable: true
+          - _bookshop_name: generic/technology-badge
+            text: SASS
+            link:
+            linkable: true
+          - _bookshop_name: generic/technology-badge
+            text: Tailwind
+            link:
+            linkable: true
+          - _bookshop_name: generic/technology-badge
+            text: Figma
+            link:
+            linkable: true
+          - _bookshop_name: generic/technology-badge
+            text: Responsive / Mobile First development
             link:
             linkable: true
       - group_name: Search, Optimization, and Integrations
         skills:
-          - text: Git
+          - _bookshop_name: generic/technology-badge
+            text: Git
             link: https://github.com/
             linkable: true
-          - text: SEO
+          - _bookshop_name: generic/technology-badge
+            text: CloudCannon
             link:
             linkable: true
-          - text: Web Performance Optimization
-            link: 
-            linkable: true
-          - text: PageFind
-            link: 
-            linkable: true
-          - text: AI Integrations
+          - _bookshop_name: generic/technology-badge
+            text: Search Engine Optimization
             link:
             linkable: true
-          - text: CloudCannon
+          - _bookshop_name: generic/technology-badge
+            text: Web Performance Optimization
+            link:
+            linkable: true
+          - _bookshop_name: generic/technology-badge
+            text: PageFind
+            link:
+            linkable: true
+          - _bookshop_name: generic/technology-badge
+            text: Algolia
+            link:
+          - _bookshop_name: generic/technology-badge
+            text: AI Integrations
             link:
             linkable: true
 ---
