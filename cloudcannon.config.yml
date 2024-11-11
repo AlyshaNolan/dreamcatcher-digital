@@ -11,6 +11,11 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    url: [full_slug]
+    _enabled_editors:
+      - visual
+    glob:
+      - '!components.md'
   projects:
     path: content/projects
     glob:
