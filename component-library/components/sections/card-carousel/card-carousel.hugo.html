@@ -1,5 +1,5 @@
 <section class="c-card-carousel" x-data="carousel()" x-init='cards = {{ len (where site.RegularPages "Section" "projects") }}; init();' @resize.window="resize()">
-    <h2 class="c-card-carousel__heading">Portfolio</h2>
+    <h2 class="c-card-carousel__heading" id="{{ .heading | lower }}">{{ .heading }}</h2>
     
     <div class="c-card-carousel__container">
         <div class="c-card-carousel__container__cards" :style="`transform: translateX(-${currentGroup * 100}%);`">

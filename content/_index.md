@@ -5,4 +5,5 @@ content_blocks:
     heading: "Alysha Jo Nolan"
     subtitle: "Web Developer"
   - _bookshop_name: "sections/card-carousel"
+    heading: Portfolio
 ---
