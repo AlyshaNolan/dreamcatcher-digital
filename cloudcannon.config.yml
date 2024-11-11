@@ -11,6 +11,8 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    _enabled_editors:
+      - visual
   projects:
     path: content/projects
     glob:
@@ -32,6 +34,24 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+_inputs:
+  short_text:
+    type: textarea
+    cascade: true
+  technologies:
+    type: array
+    options:
+      empty_type:
+      preview:
+      structures:
+        style: select
+        values:
+          - label: Link
+            icon: link
+            value:
+              text:
+              link:
+    cascade: true
 _snippets_imports:
   hugo:
     exclude:
