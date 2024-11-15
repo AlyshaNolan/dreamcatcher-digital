@@ -1,13 +1,12 @@
 .c-card {
-    flex: 0 0 calc(100% - 96px);
-    margin: 0px 32px;
+    flex: 0 0 calc(100% - 34px);
     padding: 16px;
     border: 1px solid #afafaf30;
     position: relative;
     transition: .5s;
     cursor: pointer;
     display: grid;
-    grid-template-rows: auto 6rem 100px 40px;
+    grid-template-rows: auto auto 100px 40px;
 
     &__technologies {
         display: flex;
@@ -16,6 +15,7 @@
 
     &__heading {
         font-size: 1.75rem;
+        margin: 1rem 0 0.75rem 0;
     }
 
     &:after, &:before {
@@ -45,7 +45,10 @@
     &:hover:after, &:hover:before {
         -webkit-transform: scale(1);
     }
-
+    @media screen and (min-width: 480px) {
+        flex: 0 0 calc(100% - 96px);
+        margin: 0px 32px;
+    }
     @media screen and (min-width: 768px) {
         margin: 0px 8px;
         flex: 0 0 calc(50% - 48px);
