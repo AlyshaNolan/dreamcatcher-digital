@@ -3,6 +3,18 @@ export default () => {
     return {
         show_form: true,
 
+        // Helper function to get form data in the supported format
+        getFormDataString(formEl) {
+            var formData = new FormData(formEl),
+            data = [];
+
+            for (var keyValue of formData) {
+                data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+            }
+
+            return data.join("&");
+        },
+
         submitForm(event, element) {
             event.preventDefault();
 
