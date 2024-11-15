@@ -21,9 +21,7 @@ export default () => {
             var request = new XMLHttpRequest();
               
             request.addEventListener("load", () => {
-                console.log(request.status)
                 if (request.status === 303 || request.status === 200) { // CloudCannon redirects on success
-                    console.log("success")
                     this.show = false;
                     let form = element.parentNode;
                     form.scrollIntoView({ behavior: "smooth", block: "start" });
