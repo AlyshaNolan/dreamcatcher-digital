@@ -73,7 +73,7 @@
                 background: #65d4f0;
                 transition: all .35s;
                 z-index: -1;
-                border-radius: 10px;
+                border-radius: 9px;
             }
     
             &:hover{
@@ -84,5 +84,9 @@
                 width: 100%;
             }
         }
+    }
+
+    &__success {
+        grid-column: 2;
     }
 }
