@@ -121,4 +121,5 @@ content_blocks:
       zoom_level: 10
   - _bookshop_name: sections/contact
     heading: Contact
+    inbox_key: portfolio-form-submissions
 ---
