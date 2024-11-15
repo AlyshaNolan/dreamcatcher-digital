@@ -6,11 +6,12 @@
     right: 0;
     background-color: #A6038B30;
     color: #afafaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__modal {
         position: fixed;
-        top: 5%;
-        left: 15%;
         width: 70%;
         height: 80%;
         background-color: #1b1b1b;
@@ -26,7 +27,7 @@
                 gap: 16px;
 
                 &__heading {
-                    font-size: 3.5rem;
+                    font-size: 1.75rem;
                     margin: 0;
                 }
 
@@ -48,6 +49,16 @@
                             color: #afafaf;
                             font-size: 1.25rem;
                         }
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            &__content {
+                &__hero {
+                    &__heading {
+                        font-size: 3.5rem;
                     }
                 }
             }
