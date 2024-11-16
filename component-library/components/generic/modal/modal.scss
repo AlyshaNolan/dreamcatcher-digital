@@ -34,9 +34,9 @@
                 &__links {
                     display: flex;
                     justify-content: space-between;
+                    --badge-color: #A6038B;
 
                     &__bagdes {
-                        --badge-color: #A6038B;
                         display: flex;
                         gap: 16px;
                     }
@@ -45,9 +45,16 @@
                         display: flex;
                         gap: 10px;
                         align-items: center;
+
                         i {
                             color: #afafaf;
                             font-size: 1.25rem;
+                            transition: color 0.2s ease-in-out;
+                        }
+                        a:hover {
+                            i {
+                                color: #A6038B;
+                            }
                         }
                     }
                 }
