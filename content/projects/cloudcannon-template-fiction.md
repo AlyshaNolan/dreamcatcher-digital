@@ -2,7 +2,7 @@
 title: CloudCannon Template - Fiction
 thumbnail_image: /images/cloudcannon-template-fiction-thumbnail.png 
 image: /images/cloudcannon-template-fiction.png 
-short_text: Converted a themefisher template to be optimised for use within CloudCannon
+short_text: Converted a themefisher template to be optimized for use within CloudCannon
 technologies:
     - text: Hugo
       link: https://gohugo.io/
