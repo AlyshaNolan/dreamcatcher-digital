@@ -1,4 +1,5 @@
 <div class="c-card" @click="showModal = true; page = '{{ .Path }}'">
+    <span class="c-card__open"><i class="fa-solid fa-plus"></i></span>
     <img src="{{ .Params.thumbnail_image }}">
     <h3 class="c-card__heading">{{ .Title }}</h3>
     <p>{{ .Params.short_text }}</p>
