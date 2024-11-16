@@ -20,6 +20,25 @@
         border-radius: 10px;
         overflow: scroll;
 
+        &__close {
+            position: absolute;
+            right: 26px;
+            top: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            font-size: .75rem;
+            background-color: #FFFFFF;
+            color: #A6038B;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0 0 20px 5px #A6038B;
+            cursor: pointer;
+            pointer-events: all;
+        }
+
         &__content {
             &__hero {
                 display: flex;
