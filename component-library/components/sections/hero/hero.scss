@@ -42,6 +42,8 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 48px;
+                justify-content: center;
+                row-gap: 12px;
 
                 &__link {
                     font-size: 1.125rem;
@@ -93,6 +95,10 @@
             &__content {
                 justify-items: left;
                 text-align: left;
+
+                &__links {
+                    justify-content: left;
+                }
             }
         }
     }
