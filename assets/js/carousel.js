@@ -7,6 +7,13 @@ export default () => {
         screenSize: '',
         cards: 0,
 
+        stopVideo(element) {
+            video = element.querySelector("iframe");
+            source = video.src;
+            video.src = '';
+            video.src = source;
+        },
+
         calcMaxCards() {
             this.screenSize = (window.innerWidth > 0) ? window.innerWidth : screen.width;
             if (this.screenSize >= 1024) {
