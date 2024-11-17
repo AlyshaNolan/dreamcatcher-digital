@@ -5,7 +5,7 @@ image: /images/cloudcannon-template-venture.png
 short_text: A polished marketing website template, primarily for use within CloudCannon
 technologies:
   - text: Eleventy
-    link: 
+    link: https://www.11ty.dev/
 live_site: https://spiky-polar.cloudvent.net/
 github: https://github.com/CloudCannon/venture-eleventy-bookshop-template
 wip: false

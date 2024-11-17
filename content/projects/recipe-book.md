@@ -1,11 +1,12 @@
 ---
 title: Recipe Book
-image: 
+image: /images/recipe-book.png
+thumbnail_image: /images/recipe-book-thumbnail.png
 short_text: A recipe book site inspired by the charm of a handwritten, generational recipe collection
 technologies:
   - text: Astro
     link: https://astro.build/
-live_site:
+live_site: https://hardy-helicopter.cloudvent.net/recipes
 github: https://github.com/AlyshaNolan/recipe-book
 wip: true
 ---
