@@ -6,6 +6,7 @@
     row-gap: 24px;
     width: 100%;
     position: relative;
+    z-index: 10;
 
     &__heading {
         grid-column: 2;
