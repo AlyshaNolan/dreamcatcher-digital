@@ -46,7 +46,7 @@
                 row-gap: 12px;
 
                 &__link {
-                    font-size: 1.125rem;
+                    font-size: 1.25rem;
                     align-self: flex-end;
                     color: #afafaf;
                     text-decoration: none;
@@ -98,6 +98,9 @@
 
                 &__links {
                     justify-content: left;
+                    &__link {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
