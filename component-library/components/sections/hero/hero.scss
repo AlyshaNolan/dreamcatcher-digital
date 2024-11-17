@@ -82,7 +82,13 @@
         &__image {
             box-shadow: 0 0 5px #65d4f0, 0 0 15px #fff;
             border-radius: 10px;
-            max-height: 400px;
+            height: 400px;
+            max-width: 350px;
+            object-fit: cover;
+
+            @media screen and (min-width: 1024px) {
+                max-width: 500px;
+            }
         }
     }
 
