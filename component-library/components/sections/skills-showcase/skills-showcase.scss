@@ -23,7 +23,12 @@
 
         &__group-name {
             font-size: 1.5rem;
+            text-align: center;
             color: #65d4f0;
+
+            @media screen and (min-width: 768px) {
+                text-align: left;
+            }
         }
 
         &__badges {

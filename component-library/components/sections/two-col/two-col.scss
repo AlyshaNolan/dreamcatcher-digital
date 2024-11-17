@@ -24,10 +24,15 @@
 
         &__text {
             line-height: 1.5rem;
+            text-align: center;
         }
 
         @media screen and (min-width: 768px) {
             grid-template-columns: 1fr 1fr;
+
+            &__text {
+                text-align: left;
+            }
         }
     }
 }
